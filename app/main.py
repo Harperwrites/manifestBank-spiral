@@ -1,8 +1,8 @@
 # main.py
 from fastapi import FastAPI, HTTPException, Depends
 from sqlalchemy.orm import Session
-from backend.app.database import SessionLocal, engine, Base
-from backend.app.models import User, BankAccount, Transaction, ManifestGoal, LedgerEntry
+from app.database import SessionLocal, engine, Base
+from app.models import User, BankAccount, Transaction, ManifestGoal, LedgerEntry
 from pydantic import BaseModel
 
 # Initialize DB
